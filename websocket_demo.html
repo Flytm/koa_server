@@ -17,7 +17,7 @@
     var recv = document.querySelector('#recv')
     let ws = null
     connect.onclick = function(){
-      ws = new WebSocket('ws://localhost:9998')
+      ws = new WebSocket('ws://localhost:8080')
       ws.onopen = () => {
         console.log('连接服务端成功了...')
         send.disabled = false
